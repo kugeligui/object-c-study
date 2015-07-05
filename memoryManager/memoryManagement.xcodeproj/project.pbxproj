@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		987B7F511B493A0800515EE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 987B7F501B493A0800515EE2 /* main.m */; };
+		987B7F591B493BA200515EE2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 987B7F581B493BA200515EE2 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		987B7F4D1B493A0800515EE2 /* memoryManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = memoryManager; sourceTree = BUILT_PRODUCTS_DIR; };
+		987B7F4D1B493A0800515EE2 /* memoryManagement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = memoryManagement; sourceTree = BUILT_PRODUCTS_DIR; };
 		987B7F501B493A0800515EE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		987B7F571B493BA200515EE2 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		987B7F581B493BA200515EE2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +52,7 @@
 		987B7F4E1B493A0800515EE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				987B7F4D1B493A0800515EE2 /* memoryManager */,
+				987B7F4D1B493A0800515EE2 /* memoryManagement */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				987B7F501B493A0800515EE2 /* main.m */,
+				987B7F571B493BA200515EE2 /* Person.h */,
+				987B7F581B493BA200515EE2 /* Person.m */,
 			);
 			path = memoryManager;
 			sourceTree = "<group>";
@@ -65,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		987B7F4C1B493A0800515EE2 /* memoryManager */ = {
+		987B7F4C1B493A0800515EE2 /* memoryManagement */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 987B7F541B493A0800515EE2 /* Build configuration list for PBXNativeTarget "memoryManager" */;
+			buildConfigurationList = 987B7F541B493A0800515EE2 /* Build configuration list for PBXNativeTarget "memoryManagement" */;
 			buildPhases = (
 				987B7F491B493A0800515EE2 /* Sources */,
 				987B7F4A1B493A0800515EE2 /* Frameworks */,
@@ -77,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = memoryManager;
+			name = memoryManagement;
 			productName = memoryManager;
-			productReference = 987B7F4D1B493A0800515EE2 /* memoryManager */;
+			productReference = 987B7F4D1B493A0800515EE2 /* memoryManagement */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 987B7F481B493A0800515EE2 /* Build configuration list for PBXProject "memoryManager" */;
+			buildConfigurationList = 987B7F481B493A0800515EE2 /* Build configuration list for PBXProject "memoryManagement" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				987B7F4C1B493A0800515EE2 /* memoryManager */,
+				987B7F4C1B493A0800515EE2 /* memoryManagement */,
 			);
 		};
 /* End PBXProject section */
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987B7F591B493BA200515EE2 /* Person.m in Sources */,
 				987B7F511B493A0800515EE2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,21 +211,23 @@
 		987B7F551B493A0800515EE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = memoryManagement;
 			};
 			name = Debug;
 		};
 		987B7F561B493A0800515EE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = memoryManagement;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		987B7F481B493A0800515EE2 /* Build configuration list for PBXProject "memoryManager" */ = {
+		987B7F481B493A0800515EE2 /* Build configuration list for PBXProject "memoryManagement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				987B7F521B493A0800515EE2 /* Debug */,
@@ -228,13 +236,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		987B7F541B493A0800515EE2 /* Build configuration list for PBXNativeTarget "memoryManager" */ = {
+		987B7F541B493A0800515EE2 /* Build configuration list for PBXNativeTarget "memoryManagement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				987B7F551B493A0800515EE2 /* Debug */,
 				987B7F561B493A0800515EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
