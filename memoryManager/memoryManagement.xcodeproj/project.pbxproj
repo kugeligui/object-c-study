@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		987B7F511B493A0800515EE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 987B7F501B493A0800515EE2 /* main.m */; };
 		987B7F591B493BA200515EE2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 987B7F581B493BA200515EE2 /* Person.m */; };
+		98A742EA1B4968030071A96B /* 进度.txt in Sources */ = {isa = PBXBuildFile; fileRef = 98A742E91B4968030071A96B /* 进度.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		987B7F501B493A0800515EE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		987B7F571B493BA200515EE2 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		987B7F581B493BA200515EE2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		98A742E91B4968030071A96B /* 进度.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "进度.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			children = (
 				987B7F4F1B493A0800515EE2 /* memoryManager */,
 				987B7F4E1B493A0800515EE2 /* Products */,
+				98A742E91B4968030071A96B /* 进度.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A742EA1B4968030071A96B /* 进度.txt in Sources */,
 				987B7F591B493BA200515EE2 /* Person.m in Sources */,
 				987B7F511B493A0800515EE2 /* main.m in Sources */,
 			);
