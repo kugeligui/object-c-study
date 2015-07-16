@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/ligui/Documents/code/object-c-study/memoryManager/memoryManagement.xcodeproj">
+      location = "group:property/property.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/ligui/Documents/code/object-c-study/memoryManager/MemoryManagement.xcodeproj">
    </FileRef>
 </Workspace>

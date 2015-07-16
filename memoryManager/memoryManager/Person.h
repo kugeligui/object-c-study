@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Book.h"
 
 @interface Person : NSObject
+{
+    Book *_book;
+    NSInteger _age;
+}
 
+-(void)setBook:(Book *)book;
+-(Book *)book;
+
+-(void)setAge:(NSInteger)age;
+-(NSInteger)age;
 @end
