@@ -12,6 +12,7 @@
 
 int main(int argc, const char * argv[]) {
     
+    
     Person *p=[[Person alloc]init];
     Card *c=[[Card alloc]init];
     //p:1,c:1
@@ -27,6 +28,11 @@ int main(int argc, const char * argv[]) {
     
     //p:0
     [p release];
-
+    
+    //自动释放池
+    @autoreleasepool {
+        Person *p1=[[[Person alloc]init]autorelease];
+    }
+    
     return 0;
 }
